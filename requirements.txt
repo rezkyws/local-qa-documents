@@ -1,0 +1,4 @@
+# python 3.10.9
+sentence-transformers==2.2.2
+pypdf==3.13.0
+llama-index==0.7.11.post1
