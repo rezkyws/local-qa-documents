@@ -1,0 +1,36 @@
+2023-08-29 22:30:21,863 - uvicorn.error - INFO - serve:76 - Started server process [7775]
+2023-08-29 22:30:21,863 - uvicorn.error - INFO - startup:46 - Waiting for application startup.
+2023-08-29 22:30:21,863 - uvicorn.error - INFO - serve:76 - Started server process [7773]
+2023-08-29 22:30:21,863 - uvicorn.error - INFO - startup:60 - Application startup complete.
+2023-08-29 22:30:21,863 - uvicorn.error - INFO - startup:46 - Waiting for application startup.
+2023-08-29 22:30:21,863 - uvicorn.error - INFO - startup:60 - Application startup complete.
+2023-08-29 22:30:21,863 - uvicorn.error - INFO - serve:76 - Started server process [7774]
+2023-08-29 22:30:21,863 - uvicorn.error - INFO - startup:46 - Waiting for application startup.
+2023-08-29 22:30:21,863 - uvicorn.error - INFO - startup:60 - Application startup complete.
+2023-08-29 22:30:21,878 - uvicorn.error - INFO - serve:76 - Started server process [7771]
+2023-08-29 22:30:21,878 - uvicorn.error - INFO - serve:76 - Started server process [7772]
+2023-08-29 22:30:21,878 - uvicorn.error - INFO - startup:46 - Waiting for application startup.
+2023-08-29 22:30:21,878 - uvicorn.error - INFO - startup:46 - Waiting for application startup.
+2023-08-29 22:30:21,878 - uvicorn.error - INFO - startup:60 - Application startup complete.
+2023-08-29 22:30:21,878 - uvicorn.error - INFO - startup:60 - Application startup complete.
+2023-08-29 22:30:51,570 - uvicorn.access - INFO - send:496 - 127.0.0.1:32776 - "GET / HTTP/1.1" 200
+2023-08-29 22:31:13,642 - uvicorn.error - INFO - shutdown:264 - Shutting down
+2023-08-29 22:31:13,644 - uvicorn.error - INFO - shutdown:264 - Shutting down
+2023-08-29 22:31:13,644 - uvicorn.error - INFO - shutdown:264 - Shutting down
+2023-08-29 22:31:13,657 - uvicorn.error - INFO - shutdown:264 - Shutting down
+2023-08-29 22:31:13,657 - uvicorn.error - INFO - shutdown:264 - Shutting down
+2023-08-29 22:31:13,743 - uvicorn.error - INFO - shutdown:65 - Waiting for application shutdown.
+2023-08-29 22:31:13,743 - uvicorn.error - INFO - shutdown:76 - Application shutdown complete.
+2023-08-29 22:31:13,743 - uvicorn.error - INFO - serve:86 - Finished server process [7773]
+2023-08-29 22:31:13,744 - uvicorn.error - INFO - shutdown:65 - Waiting for application shutdown.
+2023-08-29 22:31:13,744 - uvicorn.error - INFO - shutdown:65 - Waiting for application shutdown.
+2023-08-29 22:31:13,745 - uvicorn.error - INFO - shutdown:76 - Application shutdown complete.
+2023-08-29 22:31:13,745 - uvicorn.error - INFO - shutdown:76 - Application shutdown complete.
+2023-08-29 22:31:13,745 - uvicorn.error - INFO - serve:86 - Finished server process [7775]
+2023-08-29 22:31:13,745 - uvicorn.error - INFO - serve:86 - Finished server process [7774]
+2023-08-29 22:31:13,758 - uvicorn.error - INFO - shutdown:65 - Waiting for application shutdown.
+2023-08-29 22:31:13,758 - uvicorn.error - INFO - shutdown:65 - Waiting for application shutdown.
+2023-08-29 22:31:13,758 - uvicorn.error - INFO - shutdown:76 - Application shutdown complete.
+2023-08-29 22:31:13,758 - uvicorn.error - INFO - shutdown:76 - Application shutdown complete.
+2023-08-29 22:31:13,758 - uvicorn.error - INFO - serve:86 - Finished server process [7771]
+2023-08-29 22:31:13,758 - uvicorn.error - INFO - serve:86 - Finished server process [7772]

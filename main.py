@@ -12,7 +12,7 @@ app.include_router(router)
 async def root():
 
     message = {
-        'message': f'This is [your api name] API v{API_VERSION}'
+        'message': f'This is QA over documents database API v{API_VERSION}'
     }
 
     return message
