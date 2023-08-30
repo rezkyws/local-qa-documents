@@ -1,25 +1,64 @@
 # for load machine learning models
 import os
 from ...core.logging import logger
+from transformers import AutoTokenizer
+from auto_gptq import AutoGPTQForCausalLM
+from langchain.embeddings import HuggingFaceEmbeddings
+from langchain.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
+from ...core.config import EMBEDDING_MODEL_DEVICE, LLM_MODEL_DEVICE
 
 
 CWD = os.getcwd()
 
 class Models:
     def __init__(self):
-        self.the_model = self.load_models()
+        self.embedding_model = self.load_embedding_models()
+        self.llm_model, self.llm_tokenizer = self.load_llm_models()
 
-    def load_models(self):
+    def load_llm_models(self):
         try:
-            logger.info('load model is on progress...')
-            model_folder = f'{CWD}/ml-models/model.pkl/'
-            # do something to load your model here
-            logger.info('load model is finished!')
+            logger.info('load llm model is on progress...')
+            model_name_or_path = f'{CWD}/ml-models/TheBloke--Llama-2-13B-chat-GPTQ/'
+            model_basename = "model"
+            use_triton = False
+            tokenizer = AutoTokenizer.from_pretrained(model_name_or_path, use_fast=True)
+            model = AutoGPTQForCausalLM.from_quantized(
+                model_name_or_path,
+                model_basename=model_basename,
+                use_safetensors=True,
+                trust_remote_code=True,
+                device=LLM_MODEL_DEVICE,
+                streaming=True,
+                callbacks=[StreamingStdOutCallbackHandler()],
+                use_triton=use_triton,
+                quantize_config=None
+            )
+            logger.info('load lmm model is finished!')
             
-            return model_folder
+            return model, tokenizer
 
         except Exception as e:
-            logger.error('error when load the model :', e)
+            logger.error('error when load llm model :', e)
+            quit()
+
+    def load_embedding_models(self):
+        try:
+            logger.info('load text embedding model is on progress...')
+            model_name_or_path = f'{CWD}/ml-models/TheBloke--Llama-2-13B-chat-GPTQ/'
+            model_name = "intfloat/multilingual-e5-large"
+            model_kwargs = {'device': EMBEDDING_MODEL_DEVICE}
+            encode_kwargs = {'normalize_embeddings': False}
+            encoder = HuggingFaceEmbeddings(
+                model_name=model_name,
+                model_kwargs=model_kwargs,
+                encode_kwargs=encode_kwargs
+            )
+            logger.info('load text embedding model is finished!')
+            
+            return encoder
+
+        except Exception as e:
+            logger.error('error when load text embedding :', e)
             quit()
            
 models = Models()
