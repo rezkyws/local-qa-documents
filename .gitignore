@@ -1,2 +1,5 @@
 dev.ipynb
 __pycache__
+logs
+ml-models
+.env
