@@ -1,7 +1,7 @@
 # api core module for all endpoints
 from fastapi import APIRouter
-from .endpoints.endpoint_1 import ClassName
-from .schemas.schema_1 import SchemaName
+from .endpoints.chat import Chat
+from .schemas.Prompt import Prompt
 
 router = APIRouter(
     prefix='/api/v1',
@@ -10,9 +10,9 @@ router = APIRouter(
     }
 )
 
-@router.post('/endpoint-name')
-async def func_name(schema_name: SchemaName):
-    class_name = ClassName(schema_name.field_name)
-    result = class_name.get_inference()
+@router.post('/chat')
+async def answer_question(prompt: Prompt):
+    chat = Chat(prompt.question)
+    result = chat.ask_chat_model()
 
     return result
