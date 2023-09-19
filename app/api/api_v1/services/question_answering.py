@@ -3,7 +3,7 @@ from langchain.prompts import PromptTemplate
 from langchain.chains.question_answering import load_qa_chain
 from ..load_models import models
 from ....core.logging import logger
-from .get_collection import GetCollection
+from .get_collection import CollectionGetter
 
 
 PROMPT_TEMPLATE = """Don't use your existing knowledge to answer the question, only use the following pieces of context to answer the question. 
@@ -24,11 +24,11 @@ class ClearCache:
 class QuestionAnswering:
     def __init__(self):
         self._qa_chain_prompt = PROMPT_TEMPLATE
-        self._collection = GetCollection()
+        self._collection = CollectionGetter()
 
     def __call__(self, question, number_documents = 4):
         try:
-            docs, status, error = self._collection.get_docs_vector(query=question, total_sources=number_documents)
+            docs, status, error = self._collection.search_relevant_docs(query=question, total_sources=number_documents)
             if status:
                 with ClearCache():
                     PROMPT = PromptTemplate(
