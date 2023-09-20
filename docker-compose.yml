@@ -1,8 +1,8 @@
 version: "3.7"
 services:
-  service-name:
-    image: "image:name"
-    container_name: container_name
+  local-qa-db:
+    image: "local:qa:db"
+    container_name: local_qa_db
     restart: "always"
     build: ./
     ports:
