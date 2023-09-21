@@ -141,3 +141,11 @@ Basically, there are two features in this application
 2. Upload documents so it will be added to your vector database (knowledge base)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<!-- LICENSE -->
+## License
+
+Distributed under the MIT License and all depedencies license that i used.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
