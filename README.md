@@ -3,10 +3,10 @@
 
 <br />
 <div align="center">
-  <h3 align="center">QA Over Database Application</h3>
+  <h3 align="center">Local QA (Question-Answering) using Large Language Models and Database as a Source</h3>
 
   <p align="center">
-    This project is a question-answering application that leverages local and open-source Large Language Models (LLMs). It utilizes your text database as its knowledge base or primary source of information.
+    This project is a question-answering application that leverages local and open-source Large Language Models (LLMs). It utilizes your vector database as its knowledge base or primary source of information.
     <br />
     <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
     <br />
@@ -89,6 +89,7 @@ Here are the things you should fulfill first before installation.
   ```sh
   docker pull qdrant/qdrant
 * Install docker-compose, only if you want running the app via docker later, follow the instruction [here](https://docs.docker.com/compose/install/)
+* If you want run this project natively, then you should have `cuda version 11.7` installed in your machine/server, otherwise you should run via docker (but your GPU driver version should support cuda 11.7).
 
 ### Installation
 
@@ -126,9 +127,17 @@ Here are the things you should fulfill first before installation.
    ```sh
    streamlit run Chat.py --server.port=3346
    ```
-7. Done! if everything run successfully now open the apps on the browser and go to this link `localhost:3346` (default)
-      
-   ```
-   const API_KEY = 'ENTER YOUR API';
-   ```
+7. Done!
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+## Usage
+
+If everything run successfully now open the apps on the browser and go to this link `localhost:3346` (default).
+
+Basically, there are two features in this application
+1. Asking question and get answer from llms based on what information that your vector database have
+2. Upload documents so it will be added to your vector database (knowledge base)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
