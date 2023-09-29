@@ -47,7 +47,10 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+### Screenshot 1
+![Screenshot1](https://github.com/rezkyws/local-qa-documents/blob/master/assets/images/local_qa_1.png)
+### Screenshot 2
+![Screenshot2](https://github.com/rezkyws/local-qa-documents/blob/master/assets/images/local_qa_2.png)
 
 With the rise of ChatGPT, which uses LLM (Large Language Model) as the backbone, it opens up many new opportunities for innovation. 
 
@@ -146,6 +149,6 @@ Basically, there are two features in this application
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License and all depedencies license that i used.
+Distributed under the MIT License.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
