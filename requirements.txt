@@ -1,0 +1,14 @@
+accelerate==0.21.0
+streamlit==1.25.0
+fastapi==0.95.2
+uvicorn==0.23.1
+qdrant-client==1.4.0
+pytz==2022.1
+python-dotenv==1.0.0
+langchain==0.0.260
+scipy==1.11.1
+transformers==4.31.0
+auto-gptq==0.4.2 --extra-index-url https://huggingface.github.io/autogptq-index/whl/cu117/
+sentencepiece==0.1.99
+sentence-transformers==2.2.2
+python-multipart==0.0.6
