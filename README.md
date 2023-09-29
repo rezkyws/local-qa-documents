@@ -35,10 +35,7 @@
     </li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
@@ -142,6 +139,19 @@ If everything run successfully now open the apps on the browser and go to this l
 Basically, there are two features in this application
 1. Asking question and get answer from llms based on what information that your vector database have
 2. Upload documents so it will be added to your vector database (knowledge base)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<!-- ROADMAP -->
+## Roadmap
+
+- [x] Add basic chat over docs on database
+- [x] Add upload docs to vector database
+- [ ] Add memory/chat history
+- [ ] Support upload docs with other extensions (.doc, docx, csv, etc)
+- [ ] Add summarizing feature
+- [ ] Create new collection and select spesific collection via user interface
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
