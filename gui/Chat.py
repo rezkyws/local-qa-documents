@@ -1,20 +1,8 @@
 import streamlit as st
 import requests
 
-# with st.sidebar:
-#     openai_api_key = st.text_input("OpenAI API Key", key="langchain_search_api_key_openai", type="password")
-#     "[Get an OpenAI API key](https://platform.openai.com/account/api-keys)"
-#     "[View the source code](https://github.com/streamlit/llm-examples/blob/main/pages/2_Chat_with_search.py)"
-#     "[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/streamlit/llm-examples?quickstart=1)"
-
-# st.set_page_config(page_title = "This is a Multipage WebApp")
 st.title("💬 Chat with your docs on database")
 st.sidebar.success("Select Any Page from here")
-
-# """
-# In this example, we're using `StreamlitCallbackHandler` to display the thoughts and actions of an agent in an interactive Streamlit app.
-# Try more LangChain 🤝 Streamlit Agent examples at [github.com/langchain-ai/streamlit-agent](https://github.com/langchain-ai/streamlit-agent).
-# """
 
 if "messages" not in st.session_state:
     st.session_state["messages"] = [
