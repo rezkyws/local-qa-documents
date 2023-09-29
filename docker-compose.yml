@@ -1,14 +1,19 @@
 version: "3.7"
 services:
   local-qa-db:
-    image: "local:qa:db"
+    image: "local:qa"
     container_name: local_qa_db
     restart: "always"
     build: ./
     ports:
-      - "3345:3345"
+      - "3347:3347"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     network_mode: bridge
-    # environment:
-    #   - APP_PORT=${APP_PORT}
-    #   - SHERLOCK_PROD_BASE_API=${API_COM_PROD_BASE_API}
-    #   - SHERLOCK_BETA_BASE_API=${API_COM_BETA_BASE_API}
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
