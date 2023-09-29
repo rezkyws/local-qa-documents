@@ -21,7 +21,7 @@ if uploaded_files:
 
     with st.spinner('Vectorizing your docs is on progress...'):
         response = requests.post(
-            'http://localhost:3345/api/v1/upload-docs', 
+            'http://localhost:3347/api/v1/upload-docs', 
             files=docs, 
             timeout=300).json()
 

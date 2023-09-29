@@ -28,16 +28,9 @@ if prompt := st.chat_input(placeholder="What is algorithm ?"):
     st.session_state.messages.append({"role": "user", "content": prompt})
     st.chat_message("user").write(prompt)
 
-    # if not openai_api_key:
-    #     st.info("Please add your OpenAI API key to continue.")
-    #     st.stop()
-
-    # llm = ChatOpenAI(model_name="gpt-3.5-turbo", openai_api_key=openai_api_key, streaming=True)
-    # search = DuckDuckGoSearchRun(name="Search")
-    # search_agent = initialize_agent([search], llm, agent=AgentType.ZERO_SHOT_REACT_DESCRIPTION, handle_parsing_errors=True)
     with st.chat_message("assistant"):
         # st_cb = StreamlitCallbackHandler(st.container(), expand_new_thoughts=False)
-        response = requests.post('http://localhost:3345/api/v1/chat', json={"question": prompt}, timeout=60).json()
+        response = requests.post('http://localhost:3347/api/v1/chat', json={"question": prompt}, timeout=60).json()
         # response = search_agent.run(st.session_state.messages, callbacks=[st_cb])
         raw_source_documents = response["result"]["source_docs"]
         source_documents = '**Source documents (index)** : '
