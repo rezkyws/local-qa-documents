@@ -5,6 +5,8 @@ services:
     container_name: local_qa_db
     restart: "always"
     build: ./
+    volumes:
+      - ./logs:/logs
     ports:
       - "3347:3347"
     extra_hosts:
