@@ -3,7 +3,7 @@
 
 <br />
 <div align="center">
-  <h3 align="center">Local QA (Question-Answering) using Large Language Models and Database as a Source</h3>
+  <h3 align="center">Local QA (Question-Answering) Application</h3>
 
   <p align="center">
     This project is a question-answering application that leverages local and open-source Large Language Models (LLMs). It utilizes your vector database as its knowledge base or primary source of information.
