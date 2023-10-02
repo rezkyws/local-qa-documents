@@ -88,7 +88,8 @@ Here are the things you should fulfill first before installation.
 * Open your command-line interface and install/pull Qdrant image
   ```sh
   docker pull qdrant/qdrant
-* Install docker-compose, only if you want running the app via docker later, follow the instruction [here](https://docs.docker.com/compose/install/)
+* Install docker compose, only if you want running the app via docker later, follow the instruction [here](https://docs.docker.com/compose/install/)
+* Install nvidia container toolkit, only if you want running the app via docker later, follow the instruction [here](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html)
 * If you want run this project natively, then you should have `cuda version 11.7` installed in your machine/server, otherwise you should run via docker (but your GPU driver version should support cuda 11.7).
 
 ### Installation
