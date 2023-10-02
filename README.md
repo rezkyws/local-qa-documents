@@ -8,9 +8,6 @@
   <p align="center">
     This project is a question-answering application that leverages local and open-source Large Language Models (LLMs). It utilizes your vector database as its knowledge base or primary source of information.
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
   </p>
 </div>
 
