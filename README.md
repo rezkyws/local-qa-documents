@@ -151,6 +151,7 @@ Basically, there are two features in this application
 - [ ] Add memory/chat history
 - [ ] Support upload docs with other extensions (.doc, docx, csv, etc)
 - [ ] Add summarizing feature
+- [ ] Add flexibility to use another LLMs
 - [ ] Create new collection and select spesific collection via user interface
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
