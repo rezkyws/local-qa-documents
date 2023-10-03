@@ -41,10 +41,12 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-### Screenshot 1
-![Screenshot1](https://github.com/rezkyws/local-qa-documents/blob/master/assets/images/local_qa_1.png)
-### Screenshot 2
-![Screenshot2](https://github.com/rezkyws/local-qa-documents/blob/master/assets/images/local_qa_2.png)
+### App Architecture
+![Screenshot1](https://github.com/rezkyws/local-qa-documents/blob/master/assets/images/architecture.png)
+### App Screenshot 1
+![Screenshot2](https://github.com/rezkyws/local-qa-documents/blob/master/assets/images/local_qa_1.png)
+### App Screenshot 2
+![Screenshot3](https://github.com/rezkyws/local-qa-documents/blob/master/assets/images/local_qa_2.png)
 
 With the rise of ChatGPT, which uses LLM (Large Language Model) as the backbone, it opens up many new opportunities for innovation. 
 
